@@ -1,0 +1,129 @@
+/* --- Menú de navegación --- */
+body{
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;
+}
+.fondoNavegacion {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+ /*margin 0 auto lo que hace es que, 0 es poner cero arriba y abajo y auto iguala la medida en ambas parte izquierda y dercha(50%,50%)*/
+/*display flex acomoda los elementos en forma de lineal/horizontal(uno de lado del otro, justify.content: dpace-between acomoda los contenidos dandole espacio entre si)*/
+ .navegacion {
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.navegacion h1 {
+    font-size: 23px ;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navegacion ul li {
+    margin-left: 20px;
+}
+
+/* --- Banner --- */
+.banner {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+}
+
+.contenedorBanner {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    width: 80%;
+    font-size: 63px;
+    margin: 0;
+}
+
+/* --- Productos --- */
+.tarjetas {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom:  40px;
+    display: flex;
+    justify-content: space-between;
+}
+/*flex-direcion, tiene un flex a nivel columna de arriba hacia abajo*/
+.tarjeta {
+    width: 32%;
+    background-color: #fff ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tarjeta .imagen {
+    width: 100%;
+    height: 250px;
+    object-fit:contain;
+}
+
+/*los enunciados ya vienen con margen, por ello se aplica margin 0 para sacarlo*/
+.titulo h4 {
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+}
+
+.precio h4 {
+    width: 100%;
+    font-size: 30px;
+    margin: 20px 0;
+}
+/*cursor pointer es para aplicar la manito de mouse*/
+.botonCompra button {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 7px;
+    cursor:pointer;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.botonCompra button:hover {
+    background-color: #fff;
+    border: 1px solid #0d6efd;
+    color: black;
+}
+
+/* --- Pie de página --- *//*aling-items centre, centra el contenido al eje*/
+footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color:#fff;
+    margin-bottom: 25px;
+}
+
+footer p{
+margin: 0;
+}
+
